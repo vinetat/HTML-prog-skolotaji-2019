@@ -3,13 +3,14 @@
             <title>Piemērs</title>
             <script src="./rinkalinija.js"></script>
             <script src="./summa.js"></script>
+            <script src="./masivs.js"></script>
     </head>
     <body>
         <script>
             console.log('Sveiki, pasaule!');
-            console.log(summa(Janis, 3));
+            
         </script>
-        <!-- <script type="text/javascript"> -->
+        <script type="text/javascript">
             {
               let Janis = 5;
               function hipotenuza(a, b) {
@@ -21,15 +22,31 @@
               }
               console.log(hipotenuza(3, 4));
             }
-        <!-- </script> -->
+        </script>
 
         <script type="text/javascript">   
-        function rinkaLinija() {
+            function rinkaLinija() {
             const R = Number(prompt('Lūdzu ievadiet rādiusa garumu'));
             const C = Math.PI * 2 * R
             return `Riņķa līnijas garums ar rādiusu ${R} ir ${C.toFixed(4)} ${C}`;
-        }
+            }
+            console.log(rinkaLinija());
         </script>
+         
+         <script type="text/javascript">   
+            summa(5, 10);
+            print();
+        </script>
+        
+        <script type="text/javascript">   
+            const indekss = prompt('Ievadi indeksu');
+            const vertiba = prompt('Ievadi vertibu');
+            mainitPecIndeksa(indekss, vertiba);
+            print();
+        </script>
+
+
+
         
     </body>
 </html>
